@@ -22,23 +22,30 @@ export const Korzina = () => {
     const [delet3, setDelet3] = useState();
     const [price, setPrice] = useState(48.76);
     const [overallPrice, setOverallPrice] = useState(0);
-    const products = [
+    const productsData = [
         {name:'AOS средство для мытья посуды Crystal', img:AOS, type:butilka, weight:'450 мл', price: 48.76, count: 1},
         {name:'BioMio BIO-SOAP Экологичное туалетное мыло....', img:soap, type:yashik, weight:'90 г', price: 48.76, count: 1},
         {name:'ARIEL Автмат Гель СМС жидкое в растворимых капсулах ...', img:ariel, type:yashik, weight:'15X28.8 г', price: 48.76, count: 1},
     ]
 
-    const handleIncrease = () => {
-        setCount(count + 1);
-      };
-    
-      const handleDecrease = () => {
-        if (count > 1) {
-          setCount(count - 1);
-        }
-      };
-    
+    const [products, setProducts] = useState(productsData);
 
+    const handleIncrease = (index) => {
+        const newProducts = [...products];
+        const count = newProducts[index].count += 1;
+        const price = count * newProducts[index].price
+        setProducts(newProducts);
+    };
+
+    const handleDecrease = (index) => {
+        const newProducts = [...products];
+        if (newProducts[index].count > 1) {
+        newProducts[index].count -= 1;
+        setProducts(newProducts);
+        }
+    };
+    
+    console.log(productsData[0].price);
   return (
     <div className='Korzina'>
         <Header/>
@@ -84,13 +91,13 @@ export const Korzina = () => {
                                 <div className="korzina-right-content-box">
                                     <div className="opacity2"></div>
                                     <div className="count-box">
-                                        <button className="decrement" onClick={handleDecrease}>-</button>
+                                        <button className="decrement" disabled={item?.count === 1} onClick={()=>{handleDecrease(index)}}>-</button>
                                         <span className="count">{item?.count}</span>
-                                        <button className="decrement" onClick={handleIncrease}>+</button>
+                                        <button className="decrement" onClick={()=>handleIncrease(index)}>+</button>
                                     </div>
                                     <div className="opacity2"></div>
                                     <span className="product-price">
-                                    {item?.price * count} ₸
+                                    {item?.price * item?.count} ₸
                                     </span>
                                     <div className="opacity2"></div>
                                     <div className="del-btn" onClick={()=> setDelet1(delet1.classList.add("dn"))}>
@@ -172,7 +179,7 @@ export const Korzina = () => {
                     {/* <hr className='korzina-hr'/> */}
                     <div className="korzina-final">
                         <button className="zakaz-btn">Оформить заказ</button>
-                        <span className='full-price'>1 348,76 ₸</span>
+                        <span className='full-price'>{productsData?.length * products[0].price} ₸</span>
                     </div>
                 </div>
             </div>
