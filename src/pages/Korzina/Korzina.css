@@ -1,0 +1,142 @@
+.Korzina {
+
+}
+
+.hr {
+
+}
+
+.korzina-main-content {
+    align-items: center;
+}
+
+.korzina-product {
+    display: flex;
+    align-items: center;
+}
+
+.korzina-left-box {
+    display: flex;
+    align-items: center;
+}
+
+/* .korzina-img-box {
+    width: 281px;
+    padding: 0 auto;
+    display: flex;
+    padding: 5px 100px;
+    margin-right: 21px;
+} */
+
+.korzina-img-box {
+    width: 281px;
+    padding: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-right: 21px;
+}
+.korzina-img {
+    max-width: 250px;
+
+}
+
+.korzina-right-content-box {
+    display: flex;
+    align-items: center;
+}
+
+.korzina-text-box {
+    max-width: 480px;
+}
+
+.gr-box {
+}
+/* .product-price */
+.gr-span {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 130%;
+    color: #3F4E65;
+}
+
+.korzinka-product-name {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: #111111;
+    white-space: normal !important;
+    margin-bottom: 10px;
+}
+
+.korzina-muted {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 150%;
+    color: #3F4E65;
+    white-space: normal !important;
+}
+
+.opacity2 {
+    opacity: 0.2;
+    border: 1px dashed #3F4E65;
+    height: 49px;
+    margin: 0 44px;
+}
+
+.product-price {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 130%;
+    color: #111111;
+    width: 142px;
+    align-items: center;
+    text-align: center;
+    /* width: 100%; */
+}
+
+.korzina-hr {
+    opacity: 0.3;
+    border: 1px dashed #3F4E65;
+    margin: 65px 0;
+}
+
+.korzina-final {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.zakaz-btn {
+    background: #FFC85E;
+    border-radius: 79px;
+    padding: 21px 37px;
+    border: none;
+    color: #fff;
+}
+
+.full-price {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 130%;
+    color: #111111;
+}
+
+.dn{
+    display: none;
+}
+.decrement:hover{ 
+    cursor: pointer;
+    background-color: #F3A50D;
+    color: #fff;
+}
