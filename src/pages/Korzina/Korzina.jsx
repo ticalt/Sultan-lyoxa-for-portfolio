@@ -100,7 +100,7 @@ export const Korzina = () => {
                                     {item?.price * item?.count} ₸
                                     </span>
                                     <div className="opacity2"></div>
-                                    <div className="del-btn" onClick={()=> setDelet1(delet1.classList.add("dn"))}>
+                                    <div className="del-btn btn" onClick={()=> setDelet1(delet1.classList.add("dn"))}>
                                         <img src={del} alt="" />
                                     </div>
                                 </div>
@@ -178,7 +178,7 @@ export const Korzina = () => {
                     </div> */}
                     {/* <hr className='korzina-hr'/> */}
                     <div className="korzina-final">
-                        <button className="zakaz-btn">Оформить заказ</button>
+                        <button className="zakaz-btn btn">Оформить заказ</button>
                         <span className='full-price'>{productsData?.length * products[0].price} ₸</span>
                     </div>
                 </div>

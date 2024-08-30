@@ -22,7 +22,7 @@ export const Footer = () => {
                     <span className="footer-min-span">Подпишись на скидки и акции</span>
                     <div className="input-box">
                         <input type="text" placeholder='Введите ваш E-mail' className="footer-input" />
-                        <button className="footer-input-btn">
+                        <button className="footer-input-btn btn">
                             <img src={next} alt="" />
                         </button>
                     </div>
@@ -45,7 +45,7 @@ export const Footer = () => {
                     </div>
                     <div className="footer-list">
                         <h4 className="footer-bold">Скачать прайс-лист:</h4>
-                        <button className="yellow-btn-download">Прайс-лист <img className='download-btn-img' src={download} alt="" /></button>
+                        <button className="yellow-btn-download btn">Прайс-лист <img className='download-btn-img' src={download} alt="" /></button>
                         <span className="footer-def-span">Связь в мессенджерах:</span>
                         <div className="footer-social-icons-box">
                             <img className='footer-social-icon' src={wa} alt="" />

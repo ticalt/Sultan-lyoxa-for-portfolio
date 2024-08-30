@@ -140,3 +140,14 @@
     background-color: #F3A50D;
     color: #fff;
 }
+
+.btn:hover{
+    cursor: pointer;
+    background-color: #F3A50D;
+    color: #fff;
+}
+/* .hover-btn:hover{
+    cursor: pointer;
+    background-color: #F3A50D;
+    color: #fff;
+} */

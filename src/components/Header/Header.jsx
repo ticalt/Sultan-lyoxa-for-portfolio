@@ -73,11 +73,11 @@ export const Header = () => {
                   <Link to={'/'}>
                    <img src={Logo} alt="logo-site" className='logo-site' />
                   </Link>
-                  <Link  to={'/katalog'} className='yellow yellow-button katalog-btn hover-btn '><span className='btn-span'>Каталог</span><img src={Katalog} alt="" /></Link>
+                  <Link  to={'/katalog'} className='yellow yellow-button katalog-btn hover-btn'><span className='btn-span'>Каталог</span><img src={Katalog} alt="" /></Link>
                 </div>
                 <div className="input-box">
                   <input className='header-input hover-mix' placeholder='Поиск...' type="text"/>
-                  <button className='input-btn' type='submit'><img src={search} alt="" /></button>
+                  <button className='input-btn btn' type='submit'><img src={search} alt="" /></button>
                 </div>
                 <div className="assistant">
                   <span className='bold assistant'>+7 (777) 490-00-91</span>

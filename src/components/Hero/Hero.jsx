@@ -15,12 +15,12 @@ export const Hero = () => {
                     </h1>
 
                     <p className='hero-p'>оптом по кокчетаву и области</p>
-                    <button className='yellow-btn'>В КАТАЛОГ</button>
+                    <button className='yellow-btn btn'>В КАТАЛОГ</button>
                 </div>
                 <div className="left-bottom">
                     <div className="rec-box">
                         <div className="left-rec">
-                            <button className="plus"><img src={plus} alt="" /></button>
+                            <button className="plus btn"><img src={plus} alt="" /></button>
                             <div className="hero-text-box">
                                 <span className='rec-text '>Только самые</span>
                                 <br />
@@ -28,7 +28,7 @@ export const Hero = () => {
                             </div>
                             </div>
                         <div className="right-rec">
-                            <button className="plus"><img src={plus} alt="" /></button>
+                            <button className="plus btn"><img src={plus} alt="" /></button>
                             <div className="hero-text-box">
                                 <span className='rec-text '>Бесплатная доставка <br /> по  </span>
                                 <span className='rec-text'>Кокчетаву от 10 тыс ₸</span>
